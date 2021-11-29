@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="{% url 'home' %}">GCS.UZ</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto"></ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page faq-page">
+        <section class="clean-block clean-faq dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">BIZ HAQIMIZDA</h2>
+                    <p>Bizning web saytimizda internet bilan ishlovchi ixtiyoriy texnikani xarid qilishingiz mumkin.</p>
+                </div>
+                <div class="block-content">
+                    <div class="faq-item">
+                        <h4 class="question">GCS.UZ - Gulistan Computer Services</h4>
+                        <div class="answer">
+                            <p>Bizning korxona turli xil rusumdagi kompyuterlar savdosi bilan shug'ullanadi. </p>
+                            <p>Shuningdek siz kompyuterga aloqador bo'lgan boshqa texnikalarni sotib olishingiz mumkin. Masalan, printer, skaner, video karta , monitor, klaviatura</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="question">GCS.UZ - Gulistan Computer Services.</h4>
+                        <div class="answer">
+                            <p>Bizda turli xil modeldagi telefonlarni ham buyurtma berishingiz mumkin. Samsung, Xiomi, Iphone kabi kompaniyalar telefonlari mavjud.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="question">GCS.UZ - Gulistan Computer Services manzili.</h4>
+                        <div class="answer">
+                            <p>Sirdaryo viloyati, Guliston shahri, 4-mavuz, 70-xonadan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#contact">Contact us</a></li>
+                        <li><a href="{% url 'sign_up' %}">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Social networks</h5>
+                    <ul>
+                        <li><a href="https://www.instagram.com/direct/inbox/">instagram</a></li>
+                        <li><a href="https://t.me/begbotov_shokir">telegram</a></li>
+                        <li><a href="https://github.com/Shokir-developer">github</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17159.514966953528!2d68.78860903730394!3d40.51059714451048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suz!2s!4v1637135274638!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>e>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2021 Copyright Text</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

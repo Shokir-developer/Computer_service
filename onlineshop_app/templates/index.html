@@ -1,0 +1,350 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+
+      <link rel = "icon" href = "{% static 'img/icon.png' %}" 
+        type = "image/x-icon">
+
+      <title>GCS.uz</title>
+
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'img/fevicon.png' %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'img/loading.gif' %}" alt="loading" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="{% url 'home' %}"><img src="{% static 'img/GCS.png' %}" alt="logo" /></a>
+                                 <h4>Gulistan Computer Services</h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'home' %}"> Home  </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact us</a>
+                                 </li>
+                              </ul>
+                              <div class="sign_btn"><a href="{% url 'login' %}">Sign in</a></div>
+                              <div class="sign_btn m-3"><a href="{% url 'log_out' %}">Log Out</a></div>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="text-bg">
+                           <h1>Kompyuter va <br>texnika do'koni</h1>
+                           <strong>Turli xil rusumdagi</strong>
+                           <span>zamonaviy kompyuterlar</span>
+                           <a href="{% url 'buy' %}">Buy Now</a>
+                        </div>
+                     </div>
+                     <div class="col-md-7 padding_right1">
+                        <div class="text-img">
+                           <figure><img src="{% static 'img/top_img.png '%}" alt="#"/></figure>
+                           <h3>01</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+      <!-- about -->
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>GCS.uz  haqida</h2>
+                     <span>Bizning web saytimizda internet bilan ishlovchi ixtiyoriy texnikani xarid qilishingiz mumkin</span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-8 offset-md-2 ">
+                  <div class="about_box ">
+                     <figure><img src="{% static 'img/about_img.png' %}" alt="#"/></figure>
+                     <a class="read_more" href="{% url 'about' %}">Read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about -->
+      <!-- best -->
+      <div id="" class="best">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Faol xaridlar ro'yxati</h2>
+                     <span>Mijozlar tomonidan eng ko'p xarid qilingan texnikalar ro'yxati</span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="best_box">
+                     <h4>WiFi router <br>TP-Link </h4>
+                     <p>300Mbps - mukammal tezlik. 180 000 so'm.</p>
+                 </div>
+              </div>
+               <div class="col-md-4">
+                  <div class="best_box">
+                     <h4>4 GB <br> Video Card</h4>
+                     <p>Yuqori sifatli video karta. 300$ dan.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="best_box">
+                     <h4>Acer <br> Core i3</h4>
+                     <p>Nottebook intel protsessorli. 500$ dan.</p>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <a class="read_more" href="{% url 'buy' %}">Read more</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end best -->
+      <!-- request -->
+       <div id="contact" class="request">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Biz bilan aloqa</h2>
+                     <span>Agar sizda biror bir savol, fikr yoki xarid qilmoqchi bo'lsangiz quyidagi formani to'ldiring. Tez orada siz bilan bog'lanamiz.</span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="black_bg">
+                     <div class="row">
+                        <div class="col-md-7 ">
+                           <form method="POST" class="main_form">
+                              {% csrf_token %}
+                              <div class="row">
+
+
+                                 <div class="col-md-12 ">
+                                    {{form.name}}
+                                 </div>
+
+                                 <div class="col-md-12">
+                                    {{form.tel}}
+                                 </div>
+
+                                 <div class="col-md-12">
+                                    {{form.email}}
+                                 </div>
+
+                                 <div class="col-md-12">
+                                    {{form.info}}
+                                 </div>
+
+                                 <div class="col-sm-12">
+                                    <button class="send_btn">Send</button>
+                                 </div>
+
+                              </div>
+                           </form>
+                        </div>
+                        <div class="col-md-5">
+                           <div class="mane_img">
+                              <figure><img src="{% static 'img/men2.jpg' %}" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end request -->
+      <!-- two_box section -->
+      <div  class="two_box">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="two_box_img">
+                     <figure><img src="{% static 'img/leptop.jpg' %}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="two_box_img">
+                     <h2><span class="offer">10% </span>chegirma vaqti</h2>
+                     <p>Biz doim mijozlar talab va istagini birinchi o'ringa qo'yamiz, shuning uchun 2 oy mobaynida har bir xarid uchun chegirmalar 
+                     tashkil qildik. Mijozlar 2 oy mobaynida ixtiyoriy texnikani 10% lik chegirma bilan sotib olishlari mumkin.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end two_box section -->
+      <!-- testimonial -->
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Fikrlar</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                    
+                     <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+
+                                    <div  class="col-md-12">
+                                       <div class="test_box">
+                                          {% for fikr in fikrlar %}
+                                          
+                                              <h3>{{fikr.ism}}</h3>
+                                              <p><i class="padd_rightt0"><img src="{% static 'img/te1.png' %}" alt="#"/></i>{{fikr.fikr}}<i class="padd_leftt0"><img src="{% static 'img/te2.png' %}" alt="#"/></i> 
+                                          {% endfor %}
+
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       
+                      
+                     </div>
+
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="cont">
+                        <h3> <strong class="multi">Hozirning o'zida</strong><br>
+                           bepul buyurtma bering
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="cont_call">
+                        <h3> <strong class="multi"> Call Now</strong><br>
+                           +998(90) 152-47-07
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2021 All Rights Reserved. Design by <a href="https://t.me/begbotov_shokir"> Shokir Begbotov</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>
+
